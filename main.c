@@ -20,6 +20,25 @@ void setup() {
 }
 
 void loop() {
+  digitalWrite(LEDB, HIGH);
+  delay(50);
+  digitalWrite(LEDB, LOW);
+  int pulsewidth = a;
+  int pulsewidthlow = b;
+  int pulsecap = c;
+  int blockdelay = d;
+  for(int i = 1; i == pulsecap; i++)
+  {
+    digitalWrite(LEDA, HIGH);
+    delay(pulsewidth);
+    digitalWrite(LEDA, LOW);
+    delay(pulsewidthlow);
+    pulsewidth = pulsewidth + 50;
+
+  }
+  delay(blockdelay);
+
+  /*
   if(digitalRead(SWITCH1 == 1))
   {
     digitalWrite(LEDA, HIGH);
@@ -29,4 +48,5 @@ void loop() {
     digitalWrite(LEDA, LOW);
   }
   delay(10); // this speeds up the simulation
+  */
 }
