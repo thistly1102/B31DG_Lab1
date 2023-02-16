@@ -29,7 +29,7 @@ checkSwitch2();
 
 //Signal B Waveform
 digitalWrite(LEDB, HIGH); //Set LEDB to HIGH
-delay(50);
+delayMicroseconds(50);
 digitalWrite(LEDB, LOW);  //Set LEDB to LOW
 
 //Signal A Waveform
@@ -38,12 +38,12 @@ digitalWrite(LEDB, LOW);  //Set LEDB to LOW
   {
     //Pulse LEDA
     digitalWrite(LEDA, HIGH); //Set LEDA to HIGH
-    delay(a + increment * i); //Delay by 'a' plus the incremental delay
+    delayMicroseconds(a + increment * i); //Delay by 'a' plus the incremental delay
     digitalWrite(LEDA, LOW);  //Set LEDA to LOW
-    delay(b); //Delay by 'b'
+    delayMicroseconds(b); //Delay by 'b'
   }
   //Delay between end of Signal A waveform and start of Signal B Waveform
-  delay(d);
+  delayMicroseconds(d);
 }
 
 //Check if SWITCH1 is HIGH
