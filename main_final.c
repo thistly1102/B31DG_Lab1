@@ -34,7 +34,7 @@ digitalWrite(LEDB, LOW);  //Set LEDB to LOW
 
 //Signal A Waveform
 //Iterate Signal A waveform 'c = 16' number of times
-  for(int i = 1; i <= c; i++)
+  for(int i = 0; i <= c-1; i++)
   {
     //Pulse LEDA
     digitalWrite(LEDA, HIGH); //Set LEDA to HIGH
